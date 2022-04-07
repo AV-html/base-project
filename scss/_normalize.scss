@@ -1,0 +1,181 @@
+//* ========= nullstyle ========= *//
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+ul li {
+    list-style: none; 
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q::before,
+q::after {
+    content: "";
+    content: none;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+    display: block;
+}
+
+
+
+
+
+img {
+    vertical-align: top; // Removes padding-bottom from an image
+}
+
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    line-height: 1; // По умолчанию ~1.2
+    font-size: 16px;
+    // Prevent iOS text size adjust after orientation change, without disabling user zoom.
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+::selection {
+    background: #ffff99ad;
+    text-shadow: none;
+
+    // Neon-effect
+    // color: #fff;
+    // text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 8px #49ff18, 0 0 12px #49ff18, 0 0 16px #49ff18,
+    //     0 0 22px #49ff18, 0 0 30px #49ff18;
+
+    // Plame-effect
+    // color: #fff;
+    // text-shadow: 0 -0.5px 2px #fff, 0 -1px 5px #ff0, 0 -5px 10px #ff8000, 0 -9px 20px #f00;
+}
+
+// ! * ===== form ===== * ! //
+// fieldset {
+//     // These styles have already been reset
+//     border: 0;
+//     margin: 0;
+//     padding: 0;
+// }
+
+button {
+    cursor: pointer;
+}
+// 1. Correct font size not being inherited in all browsers.
+// 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,and Chrome.
+// 3. Improve appearance and consistency in all browsers.
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+}
+
+// Remove inner padding and border in Firefox 3+.
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}
+
+// 1. Remove default vertical scrollbar in IE 6/7/8/9.
+// 2. Improve readability and alignment in all browsers.
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+    // resize: vertical;
+    resize: none;
+}
+
+// Remove inner padding and search cancel button in Safari 5 and Chrome on OS X.
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+[type="search"] {
+    /* 1. Correct the odd appearance in Chrome and Safari. */
+    -webkit-appearance: textfield;
+    /* 2. Correct the outline style in Safari. */
+    outline-offset: -2px;
+}
+
+// Address Firefox 3+ setting `line-height` on `input` using `!important` in the UA stylesheet.
+
+button,
+input {
+    // line-height: normal;
+    line-height: 1;
+}
+// Address inconsistent `text-transform` inheritance for `button` and `select`.
+// All other form control elements do not inherit `text-transform` values.
+// Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+// Correct `select` style inheritance in Firefox 4+ and Opera.
+button,
+select {
+    text-transform: none;
+}
+
+/* Restore the focus styles unset by the previous rule */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/* 1. Correct the inability to style clickable types in iOS and Safari. */
+/* 2. Change font properties to `inherit` in Safari. */
+::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+}
+
+// ! * ===== form end ===== * ! //
+[hidden] {
+    display: none;
+}
+//* ================== end nullstyle ================== *//
