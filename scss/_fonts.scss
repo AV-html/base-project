@@ -1,4 +1,5 @@
 // Converter ttf to woff & woff2: https://transfonter.org
+// local google fonts: https://google-webfonts-helper.herokuapp.com/fonts
 
 @mixin font($fontFamily, $fileName, $fontWeight, $fontStyle) {
     @font-face {

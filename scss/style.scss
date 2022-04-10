@@ -1,24 +1,26 @@
-// ----- Fonts -----
+// * ===== Fonts ===== * //
 @import "_fonts";
 @import "_iconfont";
-
-
+// * ===== reset|normalize|nulstyle ===== * //
 @import "_normalize";
+
 @import "_variables";
 
 
 @import "_blocks";
+
+@import "_header";
 @import "_page";
-// sections
+
+// * ===== sections ===== * //
 @import "_start";
+// @import "_sectionName";
+// @import "_sectionName";
+// @import "_sectionName";
+// @import "_sectionName";
+// @import "_sectionName";
+// * ===== end sections ===== * //
+
+@import "_footer";
 
 
-
-
-body {
-}
-
-.wrapper {
-    min-height: 100%;
-    overflow: hidden;
-}
